@@ -11,8 +11,8 @@ function RightSide() {
                 <div className="login-text">
                   <p>Log in</p>
                 </div>
-                <div className="body-text">
-                     <p>Fill in all the required information below to login</p>
+                <div className="bodytext">
+                     <p className="body--text">Fill in all the required information below to login</p>
                 </div>
                 <form className="form">
                     <div className="username">

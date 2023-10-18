@@ -18,8 +18,9 @@ function LeftSide() {
               <img src= {Logo} alt='Logo'/>     
             </div>
             <div className="body2">
-              <p>The best solution for your business</p>
+              <p className="body--2">The best solution for your business</p>
             </div>
+            <RightSide/>
             
 
         </div>
