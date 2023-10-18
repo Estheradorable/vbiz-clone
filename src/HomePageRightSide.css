@@ -1,83 +1,231 @@
-.app{
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+     url("./fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight:700;
+}
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+     url("./fonts/Poppins/Poppins-Light.ttf") format("truetype");
+    font-weight:400;
+}
+
+
+.app--left{
     display: flex;
     flex-direction: row;
 }
 
-.cover{
+.cover--left{
     width:50%;
     height: 100vh;
     background: linear-gradient(183.54deg, rgba(198, 20, 94, 0) -1.31%, rgba(198, 20, 94, 0.270555) 49.49%, #393842 100.75%), url(./img/BankImage.jpg);
     background-size:cover;
     background-position:center;   
 }
-.logo{
+.logo--left{
     position: absolute;
-    width: 126px;
-    height: 126px;
+    width: 90px;
+    height: 90px;
     left: 64px;
     top: 61px;
 } 
-.text{
-    width: 544px;
-    height: 28px;
+.text--text{
+    width: 464px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 25px;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     color: #333754;
 }
+
+.container--right{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    padding-top: 12%;
+    padding-left: 16px;
+    gap: 32px;
+
+}
+
 div > h4{
 font-family: Poppins, sans-serif;
-font-size: 24px;
+font-size: 22px;
 font-weight: 700;
-line-height: 28px;
+margin: 5px;
+line-height: 25px;
 letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
 }
 div > p{
 font-family: Poppins;
-font-size: 14px;
-font-weight: 400;
+font-size: 11px;
+font-weight: 300;
+margin: 5px;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
+color: #FFFFFF;
 }
 
 .log-in, .sign-in, .create-profile{
-width: 544px;
-height: 120px;
+width: 464px;
+height: 100px;
+margin: auto;
+margin-bottom: 10px;
+padding-top: 18px;
+padding-left: 20px;
 border-radius: 6px;
 background: #C6145E;
 }
- 
-.log-in > h4{
-width: 72px;
-height: 28px;
-top: 30px;
-left: 32px;
+
+@media screen and (max-width:600px){
+    
+    .app{
+        display: flex;
+        flex-direction: column;
+    }
+    .cover--left{
+        width:100%;
+        height: 60vh;
+        background: linear-gradient(183.54deg, rgba(198, 20, 94, 0) -1.31%, rgba(198, 20, 94, 0.270555) 49.49%, #393842 100.75%), url(./img/BankImage.jpg);
+        background-size:cover;
+        background-position:center;   
+    }
+    .logo--left{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        left: 64px;
+        top: 61px;
+    }
+    .text--text{
+        width: 90%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 25px;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+    .container--right{
+        display: absolute;
+        width: 100%;
+        height: 60vh;
+        top: 55%;
+        left: -3%;
+    }
+    .log-in, .sign-in, .create-profile{
+        width: 90%;
+        height: 20%;
+        margin: auto;
+        margin-bottom: 10px;
+        padding-top: 18px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        border-radius: 6px;
+
+        }
+
+        div > h4{
+            font-family: Poppins, sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 5px;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            }
+
+    
 }
 
-.log-in > p{
-width: 446px;
-height: 20px;
-top: 66px;
-left: 32px;
+  @media screen and (max-width: 768px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .app{
+        display: flex;
+        flex-direction: column;
+    }
+    .cover--left{
+        width:100%;
+        height: 60vh;
+        background: linear-gradient(183.54deg, rgba(198, 20, 94, 0) -1.31%, rgba(198, 20, 94, 0.270555) 49.49%, #393842 100.75%), url(./img/BankImage.jpg);
+        background-size:cover;
+        background-position:center;   
+    }
+
+    .logo--left{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        left: 64px;
+        top: 61px;
+    }
+    .text--text{
+        width: 80%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 25px;
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+    .container--right{
+        display: absolute;
+        width: 100%;
+        height: 60vh;
+        top: 55%;
+        left: -3%;
+    }
+    .log-in, .sign-in, .create-profile{
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+        padding-top: 18px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        border-radius: 6px;
+
+        }
+
+        div > h4{
+            font-family: Poppins, sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 15px;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            }
+
+            div > p{
+                font-size: 15px;
+                font-weight: 300;
+                margin: 5px;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                }
+
+    
 }
 
-.sign-in > h4 {
-width: 92px;
-height: 28px;
-top: 20px;
-left: 32px;
-}
-.sign-in>p{
-font-family: Poppins;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-}

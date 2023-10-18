@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+     url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight:700;
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +34,7 @@
 color: #ffff;
 font-weight: bolder;
 position: absolute;
-left:156px;
+left:7%;
 top:60%;
 letter-spacing: 2px;
 padding: 3px;
@@ -35,8 +42,8 @@ width: 328px;
 height: 56px;
 gap: 20px;
 font-family: Poppins;
-font-size: 38px;
-font-weight: 500;
+font-size: 30px;
+font-weight: 400;
 line-height: 56px;
 letter-spacing: 0em;
 text-align: center;
@@ -46,49 +53,51 @@ text-align: center;
 position: absolute;
 width: 102.68px;
 height: 53.84px;
-left: 471px;
-top: 63%;
+left: 30%;
+top: 61%;
 
 }
 
-.body2{
+.body--2{
     position: absolute;
-    top:70%;
-    left:246px;
+    top:69%;
+    left:14%;
     letter-spacing:2px;
     color: #FFFFFF;
+    font-size: 16px;
     font-family: Poppins;
-    font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: center;  
 }
 
 /*Right side*/
 .container{
+    position: absolute;
     width: 50%;
     height: 100vh;
-    
+    left: 50%; 
 }
 .wrapper{
     width: 100%;
     height: 368px;
-    gap: 40px;
-    margin: 15% 0 0 7%
+    margin: 25% 0 0 5%
     
 }
 .arrow{
-    margin: 3% 0 0 5%;
-    width: 80px;
-    height: 70px;
+    position: absolute;
+    margin: 1% 0 0 2%;
+    width: 30px;
+    height: 30px;
+    top: 10px;
 }
 .login-text{
     width:  100%;
     height: 20px;
     font-family: Poppins;
     font-size: 32px;
-    font-weight:bolder;
+    font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
@@ -96,7 +105,7 @@ top: 63%;
     margin-bottom: 15px;        
 }
     
-.body-text{
+.body--text{
     width: 100%;
     height: 24px;
     font-family: Poppins;
@@ -159,7 +168,7 @@ input{
     height:56px;
     padding: 16px, 0px, 16px, 0px;
     border-radius: 6px;
-    margin-top: 7%;
+    margin-top: 12%;
     
 }
 .open-text{
@@ -182,12 +191,7 @@ span{
 }
 
 
-@media screen and (max-width: 600px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+@media screen and (max-width:600px){
     
     .app{
         display: flex;
@@ -249,8 +253,12 @@ span{
         visibility: collapse;
     }
     .container{
+        display: absolute;
         width: 100%;
-        height: 70vh;}
+        height: 50vh;
+        top: 70%;
+        left: -3%;
+    }
 
     .wrapper{
         width: 100%;
@@ -315,7 +323,7 @@ span{
         height:76px;
         padding: 16px, 0px, 16px, 0px;
         border-radius: 6px;
-        margin-top: 2%;
+        margin-top: 5%;
         
     }
     .open-text{
@@ -351,7 +359,7 @@ span{
     }
     .cover{
         width:100%;
-        height: 70vh;
+        height: 60vh;
         background: linear-gradient(183.54deg, rgba(198, 20, 94, 0) -1.31%, rgba(198, 20, 94, 0.270555) 49.49%, #393842 100.75%), url(./img/BankImage.jpg);
         background-size:cover;
         background-position:center;   
@@ -367,31 +375,31 @@ span{
         color: #ffff;
         font-weight: bolder;
         position: absolute;
-        left:-4%;
-        top:50%;
+        left:-7%;
+        top:40%;
         letter-spacing: 2px;
         padding: 3px;
         width: 328px; 
         height: 56px;
         gap: 20px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 36px;
         text-align: center;
     }
     .logo2{
     position: absolute;
-    width: 102.68px;
-    height: 53.84px;
+    width: 95.68px;
+    height: 50.84px;
     left:70%;
-    top: 50%;
+    top: 40%;
     }
     .body2{
         position: absolute;
-        top:57%;
-        left:18%;
+        top:46%;
+        left:20%;
         letter-spacing:2px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
@@ -401,8 +409,10 @@ span{
         visibility: collapse;
     }
     .container{
+        position:absolute;
         width: 100%;
         height: 70vh;
+        top: 65%;;
     }
 
     .wrapper{
@@ -417,7 +427,7 @@ span{
         height: 25px;
         font-size: 30px;
         text-align: left;
-        margin-bottom: 15px;        
+        margin-bottom: 25px;        
     }
         
     .body-text{
@@ -432,7 +442,7 @@ span{
         color: #7F8EA4;
     }
     .form{
-      margin-top: 15px;
+      margin-top: 35px;
     }
     input{
         width: 90%;
@@ -486,10 +496,9 @@ span{
         line-height: 24px;
         text-align: left;
     }
-}
+};
 
-    
-
+     
  
     
         
